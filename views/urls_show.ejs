@@ -3,10 +3,10 @@
   <head>
     <%- include('partials/_header') %>
   </head>
-  <body>
-    <li> shortURL : <%= shortURL %> ----> <%= url %> </li>
+  <body style="font-size:20px; padding:50px;">
+    <li style="margin:100px;"> shortURL : <%= shortURL %> ----> <%= url %> </li>
     <!-- Edit the URL-->
-    <form method="POST" action="/urls/<%= shortURL %>">
+    <form method="POST" action="/urls/<%= shortURL %>" style="margin:100px;">
       <!-- <input id="sURL" type="text" name="sURL" value="<%= shortURL %>"> -->
       <input id="URL" type="text" name="URL" value="<%= url %>">
       <button type="submit">Updte</button>
