@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/_header') %>
+  </head>
+  <body>
+    <li> shortURL : <%= shortURL %> ----> <%= url %> </li>
+    <!-- Edit the URL-->
+    <form method="POST" action="/urls/<%= shortURL %>">
+      <!-- <input id="sURL" type="text" name="sURL" value="<%= shortURL %>"> -->
+      <input id="URL" type="text" name="URL" value="<%= url %>">
+      <button type="submit">Updte</button>
+    </form>
+  </body>
+</html>
