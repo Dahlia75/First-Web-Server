@@ -1,12 +1,17 @@
 <title>TinyApp</title>
-<% if(!username){%>
-  <form method="POST" action="/login">
-    <input id="username" type="text" name="username" placeholder="Enter the user name">
+<% if(!user){%>
+  <form method="GET" action="/login">
+    <button type="submit">Signin</button>
+  </form>
+  <form method="GET" action="/register">
+    <p>Do you have an account?</p>
     <button type="submit">Signup</button>
   </form>
 <%}else{%>
   <form method="POST" action="/logout">
-  <P><%=username%></p>
-  <button type="submit">Logout</button>
+    <P><%=user.email%></p>
+    <button type="submit">Logout</button>
   </form>
+
 <%}%>
+
