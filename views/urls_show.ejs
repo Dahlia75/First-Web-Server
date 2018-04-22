@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <%- include('partials/_header') %>
+    <style>
+        form {
+          display: inline;
+        }
+      </style>
   </head>
-  <body style="font-size:20px; padding:50px;">
-    <li style="margin:100px;"> shortURL : <%= shortURL %> ----> <%= url %> </li>
+  <body style="font-size:20px">
+    <p style="margin-left:100px; font-size:40px"><%= shortURL %> : ----> <%= url %> </p>
     <!-- Edit the URL-->
-    <form method="POST" action="/urls/<%= shortURL %>" style="margin:100px;">
-      <!-- <input id="sURL" type="text" name="sURL" value="<%= shortURL %>"> -->
-      <input id="URL" type="text" name="URL" value="<%= url %>">
-      <button type="submit">Updte</button>
+    <form method="POST" action="/urls/<%= shortURL %>/edit" style="font-size:15px; margin-left:100px;">
+      <!--<input id="sURL" type="text" name="sURL" value="<%= shortURL %>">-->
+      <input style="width:250; font-size:25px" id="URL" type="text" name="URL" value="<%= url.URL %>">
+      <button style="font-size:25px" type="submit">Update</button>
     </form>
   </body>
 </html>

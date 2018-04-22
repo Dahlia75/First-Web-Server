@@ -8,17 +8,24 @@
         }
       </style>
     </head>
-    <body>
+    <body style="font-size:20px">
+      <form method="GET" action="urls/new">
+        <p style="margin-left:25px">Do you want to add a new URL?</p>
+        <button style="font-size:15px" type="submit">New URL</button>
+      </form>
       <ul>
-        <% for (var url in urls) { %>
-          <li style="font-size:20px; padding:50px;"> <%= url %> : <%= urls[url] %>
-            <a href="/urls/<%= url %>">Edit</a>
-            <form method="POST" action="/urls/<%= url %>/delete">
-              <button type="submit">Delete</button>
-              <br/>
-            </form>
-          </li>
-        <% } %>
+        <% if (urls){
+          for (var item in urls) { %>
+            <li style="font-size:30px; padding:50px">
+              <%= item %> : <%= urls[item].URL %>
+              <a style="font-size:20px" href="/urls/<%= item %>">Edit</a>
+              <form method="POST" action="/urls/<%= item %>/delete">
+                <button style="font-size:15px" type="submit">Delete</button>
+                <br/>
+              </form>
+            </li>
+          <%}
+        }%>
       </ul>
     </body>
   </html>

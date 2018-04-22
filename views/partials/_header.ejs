@@ -1,17 +1,18 @@
 <title>TinyApp</title>
+<%console.log("user in header: ", user);%>
 <% if(!user){%>
   <form method="GET" action="/login">
-    <button type="submit">Signin</button>
+    <button style="font-size:15px" type="submit">Signin</button>
   </form>
   <form method="GET" action="/register">
     <p>Do you have an account?</p>
-    <button type="submit">Signup</button>
+    <button style="font-size:15px" type="submit" >Signup</button>
   </form>
 <%}else{%>
   <form method="POST" action="/logout">
-    <P><%=user.email%></p>
-    <button type="submit">Logout</button>
+    <P style="margin-left:20px; margin-top:20px"><%=user.email%></p>
+    <button style="font-size:15px; margin-left:20px" type="submit">Logout</button>
   </form>
-
 <%}%>
+
 

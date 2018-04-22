@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head></head>
-  <body style="font-size:20px; padding:50px;">
+  <body style="font-size:20px; margin:100px;">
     <form method="POST" action="/login">
-      <input id="email" type="email" name="email" placeholder="Enter the your email">
-      <input id="password" type="password" name="password" placeholder="Enter the your password">
-      <button type="submit">Signin</button>
+      <input style="font-size:15px" id="email" type="email" name="email" placeholder="Enter the your email">
+      <input style="font-size:15px" id="password" type="password" name="password" placeholder="Enter the your password">
+      <button style="font-size:20px" type="submit">Signin</button>
+    </form>
+    <form method="GET" action="/register">
+      <p>If you don't have an account please register here</p>
+      <button style="font-size:20px" type="submit">Signup</button>
     </form>
   </body>
 </html>

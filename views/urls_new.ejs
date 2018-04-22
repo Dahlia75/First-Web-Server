@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <body style="font-size:20px; padding:50px;">
+  <head>
     <%- include('partials/_header') %>
-    <form action="/urls" method="POST" style="margin:150px;">
+  </head>
+  <body style="font-size:20px">
+    <form style="margin-top:150px;" action="/urls" method="POST" >
       <label for="longURL">Enter a URL:</label>
-      <input id="longURL" type="text" name="longURL" placeholder="http://" style="width: 300px">
-      <input type="submit" value="Submit">
+      <input style="width: 300px;font-size:15px" id="longURL" type="text" name="longURL" placeholder="http://" >
+      <button style="font-size:20px" type="submit">Submit</button>
     </form>
   </body>
 </html>
