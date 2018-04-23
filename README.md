@@ -8,6 +8,16 @@ TinyApp is a full stack web application built with Node and Express. It is an HT
 
 ## Final Product
 
+!["Screenshot of URLs Page"](https://github.com/Dahlia75/First-Web-Server/blob/master/docs/urls_Page.png?raw=true)
+
+!["Screenshot of Register Page"](https://github.com/Dahlia75/First-Web-Server/blob/master/docs/Register_Page.png?raw=true)
+
+!["Screenshot of Login Page"](https://github.com/Dahlia75/First-Web-Server/blob/master/docs/Login_Page.png?raw=true)
+
+!["Screenshot of Add New URL Page"](https://github.com/Dahlia75/First-Web-Server/blob/master/docs/Add_New_URL.png?raw=true)
+
+!["Screenshot of Edit the URL Page"](https://github.com/Dahlia75/First-Web-Server/blob/master/docs/Edit_page.png?raw=true)
+
 ## dependencies
 
 - Node.js
