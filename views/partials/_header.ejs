@@ -1,11 +1,10 @@
 <title>TinyApp</title>
-<%console.log("user in header: ", user);%>
 <% if(!user){%>
   <form method="GET" action="/login">
     <button style="font-size:15px" type="submit">Signin</button>
   </form>
   <form method="GET" action="/register">
-    <p>Do you have an account?</p>
+    <p>Do you have account?</p>
     <button style="font-size:15px" type="submit" >Signup</button>
   </form>
 <%}else{%>
